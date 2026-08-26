@@ -36,11 +36,15 @@ class AgentAdapterManager:
             from agent_adapter.adapters import (
                 HermesAdapter, OpenClawAdapter, LangChainAdapter, AutoGPTAdapter,
                 MetaGPTAdapter, CrewAIAdapter, BabyAGIAdapter, AgentGPTAdapter,
+                CursorAdapter, ClaudeCodeAdapter, TraeAdapter, QoderAdapter,
+                CodeBuddyAdapter, ComateAdapter, DeepSeekAdapter,
             )
 
             adapters = [
                 HermesAdapter(), OpenClawAdapter(), LangChainAdapter(), AutoGPTAdapter(),
                 MetaGPTAdapter(), CrewAIAdapter(), BabyAGIAdapter(), AgentGPTAdapter(),
+                CursorAdapter(), ClaudeCodeAdapter(), TraeAdapter(), QoderAdapter(),
+                CodeBuddyAdapter(), ComateAdapter(), DeepSeekAdapter(),
             ]
 
             for adapter in adapters:
