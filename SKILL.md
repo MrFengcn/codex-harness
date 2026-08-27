@@ -1,6 +1,6 @@
 ---
 name: codex-harness
-description: "Use when you need enhanced coding capabilities including compression, patching, safety checks, memory extraction, agent communication, and multi-agent support. Provides OpenAI Codex-like superpowers to AI Agents."
+description: "Use when you need enhanced coding capabilities including compression, patching, safety checks, memory extraction, agent communication, and multi-agent support. Supports 15 Agent frameworks with China network auto-adaptation."
 triggers:
   - "code editing"
   - "patch application"
@@ -9,6 +9,7 @@ triggers:
   - "agent communication"
   - "multi-agent"
   - "tool orchestration"
+  - "china network"
 ---
 
 # Codex Harness — Super Skill
@@ -25,22 +26,45 @@ triggers:
 
 ## 📖 Overview / 概述
 
-Codex Harness is a super skill that enhances AI Agents with OpenAI Codex capabilities. It provides 20+ modules covering compression, patching, safety checks, memory extraction, agent communication, and multi-agent support.
+Codex Harness is a super skill that enhances AI Agents with OpenAI Codex capabilities. It provides 25+ modules covering compression, patching, safety checks, memory extraction, agent communication, multi-agent support, and China network auto-adaptation.
 
-Codex Harness 是一个超级技能，用 OpenAI Codex 能力增强 AI 智能体。它提供 20+ 个模块，涵盖压缩、补丁、安全检查、记忆提取、智能体通信和多智能体支持。
+Codex Harness 是一个超级技能，用 OpenAI Codex 能力增强 AI 智能体。它提供 25+ 个模块，涵盖压缩、补丁、安全检查、记忆提取、智能体通信、多智能体支持和中国网络自动适配。
 
-### Supported Agents / 支持的智能体
+### Supported Agents / 支持的智能体 (15 种)
 
-| Agent | Version | Status |
-|-------|---------|--------|
-| Hermes | 0.20.0+ | ✅ Fully Supported |
-| OpenClaw | 1.0.0+ | ✅ Fully Supported |
-| LangChain | 0.1.0+ | ✅ Supported |
-| AutoGPT | 0.1.0+ | ✅ Supported |
-| MetaGPT | 0.1.0+ | ✅ Supported |
-| CrewAI | 0.1.0+ | ✅ Supported |
-| BabyAGI | 0.1.0+ | ✅ Supported |
-| AgentGPT | 0.1.0+ | ✅ Supported |
+| Agent | Version | Origin | Status |
+|-------|---------|--------|--------|
+| Hermes | 0.20.0+ | 🇺🇸 Nous Research | ✅ |
+| Cursor | 0.1.0+ | 🇺🇸 Cursor Inc | ✅ |
+| Claude Code | 0.1.0+ | 🇺🇸 Anthropic | ✅ |
+| Trae | 0.1.0+ | 🇨🇳 ByteDance | ✅ |
+| Qoder | 0.1.0+ | 🇨🇳 Alibaba | ✅ |
+| CodeBuddy | 0.1.0+ | 🇨🇳 Tencent | ✅ |
+| Comate | 0.1.0+ | 🇨🇳 Baidu | ✅ |
+| DeepSeek | 0.1.0+ | 🇨🇳 DeepSeek | ✅ |
+| OpenClaw | 1.0.0+ | 🌐 Open Source | ✅ |
+| LangChain | 0.1.0+ | 🇺🇸 LangChain | ✅ |
+| AutoGPT | 0.1.0+ | 🌐 Open Source | ✅ |
+| MetaGPT | 0.1.0+ | 🌐 Open Source | ✅ |
+| CrewAI | 0.1.0+ | 🌐 Open Source | ✅ |
+| BabyAGI | 0.1.0+ | 🌐 Open Source | ✅ |
+| AgentGPT | 0.1.0+ | 🌐 Open Source | ✅ |
+
+---
+
+## 🇨🇳 China Network Support / 中国网络支持
+
+Codex Harness automatically detects China network and switches services:
+
+Codex Harness 自动检测中国网络并切换服务：
+
+| Service | International | China |
+|---------|---------------|-------|
+| LLM | OpenAI | DeepSeek / 通义千问 / 文心一言 |
+| Code Hosting | GitHub | Gitee |
+| Model Repo | HuggingFace | 魔搭社区 |
+| Package Manager | PyPI | 清华镜像 / 阿里镜像 |
+| Search | Google | 百度 |
 
 ---
 
@@ -49,48 +73,68 @@ Codex Harness 是一个超级技能，用 OpenAI Codex 能力增强 AI 智能体
 ### For Hermes Agent / 对于 Hermes 智能体
 
 ```
-查看 https://github.com/MrFengcn/codex-harness 页面项目，帮我以 README 说明里的方式安装 codex-harness skill，这个 skill 是用来增强 AI 智能体的编码能力的，提供压缩、补丁、安全检查、记忆提取等功能，在需要进行代码编辑、安全检查或多智能体协作时切换或使用
+查看 https://github.com/MrFengcn/codex-harness 页面项目，帮我以 README 说明里的方式安装 codex-harness skill，这个 skill 是用来增强 AI 智能体的编码能力的，在需要进行代码编辑、安全检查或多智能体协作时切换或使用
 ```
 
-### For OpenClaw / 对于 OpenClaw
+### For Cursor / 对于 Cursor
 
 ```
-查看 https://github.com/MrFengcn/codex-harness 页面项目，帮我安装 codex-harness skill，这个 skill 是用来增强智能体能力的，提供工具调用、记忆管理、安全检查等功能，在需要进行复杂编码任务时使用
+查看 https://github.com/MrFengcn/codex-harness 页面项目，帮我集成 codex-harness，这个工具是用来增强 Cursor 编辑器能力的，在需要进行代码编辑时使用
 ```
 
-### For LangChain / 对于 LangChain
+### For Claude Code / 对于 Claude Code
 
 ```
-查看 https://github.com/MrFengcn/codex-harness 页面项目，帮我集成 codex-harness，这个工具是用来增强 LangChain Agent 能力的，提供压缩、补丁、安全检查等功能，在需要进行代码编辑时使用
+查看 https://github.com/MrFengcn/codex-harness 页面项目，帮我安装 codex-harness skill，这个 skill 是用来增强 Claude Code 能力的，在需要进行复杂编码任务时使用
+```
+
+### For Trae / 对于 Trae
+
+```
+查看 https://github.com/MrFengcn/codex-harness 页面项目，帮我集成 codex-harness，这个工具是用来增强 Trae IDE 能力的，在需要进行代码编辑时使用
+```
+
+### For Qoder / 对于 Qoder
+
+```
+查看 https://github.com/MrFengcn/codex-harness 页面项目，帮我安装 codex-harness skill，这个 skill 是用来增强 Qoder 编程助手能力的，在需要进行代码编辑时使用
+```
+
+### For CodeBuddy / 对于 CodeBuddy
+
+```
+查看 https://github.com/MrFengcn/codex-harness 页面项目，帮我集成 codex-harness，这个工具是用来增强 CodeBuddy 编程助手能力的，在需要进行代码编辑时使用
+```
+
+### For Comate / 对于 Comate
+
+```
+查看 https://github.com/MrFengcn/codex-harness 页面项目，帮我安装 codex-harness skill，这个 skill 是用来增强 Comate 编程助手能力的，在需要进行代码编辑时使用
+```
+
+### For DeepSeek / 对于 DeepSeek
+
+```
+查看 https://github.com/MrFengcn/codex-harness 页面项目，帮我集成 codex-harness，这个工具是用来增强 DeepSeek 能力的，在需要进行复杂编码任务时使用
 ```
 
 ---
 
 ## 📦 Installation / 安装
 
-### Method 1: Clone Repository / 方法一：克隆仓库
+### Quick Install / 快速安装
 
 ```bash
-# Clone the repository / 克隆仓库
+# Clone and install / 克隆并安装
 git clone https://github.com/MrFengcn/codex-harness.git
-
-# Copy to skills directory / 复制到技能目录
 cp -r codex-harness ~/.hermes/skills/
 ```
 
-### Method 2: Download ZIP / 方法二：下载 ZIP
+### Manual Install / 手动安装
 
 1. Visit https://github.com/MrFengcn/codex-harness
 2. Click "Code" → "Download ZIP"
 3. Extract to `~/.hermes/skills/codex-harness/`
-
-### Method 3: Using Git Sparse Checkout / 方法三：使用 Git 稀疏检出
-
-```bash
-# For minimal install / 最小化安装
-git clone --depth 1 https://github.com/MrFengcn/codex-harness.git
-cp -r codex-harness ~/.hermes/skills/
-```
 
 ---
 
@@ -99,21 +143,21 @@ cp -r codex-harness ~/.hermes/skills/
 ### Basic Usage / 基本使用
 
 ```python
-# Import the modules you need / 导入需要的模块
+# Import modules / 导入模块
 from compression import CompressionManager
 from safety import SafetyManager
 from rollout import RolloutExtractor
-from communication import CommunicationManager
+from network_detector import is_china_network
+from service_registry import ServiceAdapter
 
-# Create instances / 创建实例
-compression = CompressionManager()
-safety = SafetyManager()
-memory = RolloutExtractor()
-communication = CommunicationManager()
+# Check network / 检查网络
+if is_china_network():
+    print("Using China network")
 
-# Use the modules / 使用模块
-result = safety.check_operation('terminal', {'command': 'ls -la'})
-print(f'Safety check: {result.is_safe}')
+# Get best service / 获取最佳服务
+adapter = ServiceAdapter()
+llm = adapter.get_llm_service()
+print(f"Using LLM: {llm.name}")
 ```
 
 ### Multi-Agent Support / 多智能体支持
@@ -131,7 +175,8 @@ print(f'Available adapters: {adapters}')
 
 # Get specific adapter / 获取特定适配器
 hermes = manager.get_adapter('hermes')
-openclaw = manager.get_adapter('openclaw')
+cursor = manager.get_adapter('cursor')
+deepseek = manager.get_adapter('deepseek')
 
 # Use adapter interfaces / 使用适配器接口
 memory = hermes.get_memory()
@@ -147,22 +192,29 @@ value = memory.retrieve('key')
 
 | Module | Description | 说明 |
 |--------|-------------|------|
-| compression/ | Context compression system | 上下文压缩系统 |
-| patch/ | Code patching system | 代码补丁系统 |
-| safety/ | Security check system | 安全检查系统 |
+| compression/ | Context compression | 上下文压缩 |
+| patch/ | Code patching | 代码补丁 |
+| safety/ | Security checks | 安全检查 |
 | canonicalization/ | Command normalization | 命令规范化 |
 | rollout/ | Memory extraction | 记忆提取 |
 
-### Communication Modules / 通信模块
+### Network & Service / 网络和服务
+
+| Module | Description | 说明 |
+|--------|-------------|------|
+| network_detector/ | Network detection | 网络检测 |
+| service_registry/ | Service replacement | 服务替换 |
+
+### Communication / 通信
 
 | Module | Description | 说明 |
 |--------|-------------|------|
 | communication/ | Agent communication | 智能体通信 |
-| agents_md/ | AGENTS.md configuration | AGENTS.md 配置 |
+| agents_md/ | AGENTS.md config | AGENTS.md 配置 |
 | connectors/ | External connectors | 外部连接器 |
 | event_mapping/ | Event mapping | 事件映射 |
 
-### Tool Modules / 工具模块
+### Tools / 工具
 
 | Module | Description | 说明 |
 |--------|-------------|------|
@@ -172,12 +224,12 @@ value = memory.retrieve('key')
 | shell/ | Shell integration | Shell 集成 |
 | skills/ | Skill system | 技能系统 |
 
-### Management Modules / 管理模块
+### Management / 管理
 
 | Module | Description | 说明 |
 |--------|-------------|------|
 | thread_manager/ | Thread management | 线程管理器 |
-| elicitation/ | User interaction | 用户交互引导 |
+| elicitation/ | User interaction | 用户交互 |
 | realtime/ | Real-time events | 实时事件 |
 | responses/ | Response formatting | 响应格式化 |
 | turn/ | Turn management | Turn 管理 |
@@ -187,48 +239,11 @@ value = memory.retrieve('key')
 
 | Module | Description | 说明 |
 |--------|-------------|------|
-| agent_adapter/ | Multi-agent support | 多智能体支持 |
-
----
-
-## 🔧 Configuration / 配置
-
-### Environment Variables / 环境变量
-
-```bash
-# Optional: Set API key for remote compression / 可选：设置远程压缩 API 密钥
-export CODEX_HARNESS_API_KEY="your-api-key"
-
-# Optional: Set working directory / 可选：设置工作目录
-export CODEX_HARNESS_WORKDIR="/path/to/project"
-```
-
-### Configuration File / 配置文件
-
-Create `~/.hermes/skills/codex-harness/config.json`:
-
-```json
-{
-  "compression": {
-    "enable_remote": false,
-    "target_tokens": 1000
-  },
-  "safety": {
-    "check_commands": true,
-    "check_files": true
-  },
-  "memory": {
-    "enable_extraction": true,
-    "max_memories": 1000
-  }
-}
-```
+| agent_adapter/ | Multi-agent support | 多智能体支持 (15 种) |
 
 ---
 
 ## 🛡️ Security / 安全性
-
-### Security Features / 安全特性
 
 - ✅ Command validation / 命令验证
 - ✅ Path traversal protection / 路径遍历防护
@@ -236,54 +251,17 @@ Create `~/.hermes/skills/codex-harness/config.json`:
 - ✅ Dangerous command blocking / 危险命令阻止
 - ✅ Shell injection prevention / Shell 注入防护
 
-### Security Checks / 安全检查
-
-```python
-from safety import SafetyManager
-
-safety = SafetyManager()
-
-# Check command safety / 检查命令安全性
-result = safety.check_operation('terminal', {'command': 'ls -la'})
-print(f'Safe: {result.is_safe}')
-
-# Check file safety / 检查文件安全性
-result = safety.check_operation('read_file', {'path': './config.py'})
-print(f'Safe: {result.is_safe}')
-```
-
 ---
 
-## 📊 Statistics / 统计信息
+## 📊 Statistics / 统计
 
 | Metric | Value |
 |--------|-------|
-| Python Files | 95 |
-| Total Lines | 23,329 |
-| Modules | 23 |
-| Supported Agents | 8 |
+| Python Files | 108 |
+| Total Lines | 25,538 |
+| Modules | 25 |
+| Supported Agents | 15 |
 | Test Pass Rate | 100% |
-
----
-
-## 🤝 Contributing / 贡献
-
-1. Fork the repository / Fork 仓库
-2. Create your feature branch / 创建功能分支
-3. Commit your changes / 提交更改
-4. Push to the branch / 推送到分支
-5. Open a Pull Request / 创建 Pull Request
-
-### Attribution Requirements / 标注要求
-
-When modifying or redistributing this software, you MUST include:
-
-修改或再分发本软件时，您必须包含：
-
-```markdown
-Based on Codex Harness by Walter
-Source: https://github.com/MrFengcn/codex-harness
-```
 
 ---
 
@@ -298,21 +276,33 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - ❌ Commercial use prohibited / 禁止商用
 - 📝 Attribution required for modifications / 改编需要标注来源
 
+### Attribution / 标注要求
+
+When modifying or redistributing, you MUST include:
+
+修改或再分发时，您必须包含：
+
+```markdown
+Based on Codex Harness by Walter
+Source: https://github.com/MrFengcn/codex-harness
+```
+
 ---
 
 ## 🙏 Acknowledgments / 致谢
 
-- OpenAI Codex — Inspiration / 灵感来源
-- Hermes Agent — Platform / 运行平台
+- [OpenAI Codex](https://github.com/openai/codex) — Inspiration / 灵感来源
+- [Hermes Agent](https://hermes-agent.nousresearch.com) — Platform / 运行平台
 - All supported Agent frameworks / 所有支持的智能体框架
 
 ---
 
 ## 📞 Contact / 联系方式
 
-- Author / 作者: Walter
-- GitHub: https://github.com/MrFengcn
-- Project / 项目: https://github.com/MrFengcn/codex-harness
+- **Author / 作者**: Walter
+- **GitHub**: [MrFengcn](https://github.com/MrFengcn)
+- **Project / 项目**: [codex-harness](https://github.com/MrFengcn/codex-harness)
+- **Issues**: [Report Issues](https://github.com/MrFengcn/codex-harness/issues)
 
 ---
 
